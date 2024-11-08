@@ -1,46 +1,94 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="目指せフル単！！"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
 
-「走るか寝るかするメロス」[l][r]
+「私はまじめな物情生、今日は少しだるいかも、、、学校に行こうかしら？？」[l][r]
 
-メロスは激怒した。[l][r]
+むく、、（布団から出た音）[l][r]
 
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
+時間がないな、、朝ごはん食べようか迷うな[l][r]
 
-(中略)[l][r]
-
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
-
-[link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
+[link target=*tag_akirame] →　もうあきらめてねる [endlink][r]
+[link target=*tag_gohan_non] →　　朝ごはんも食べずに義塾にいく [endlink][r]
+[link target=*tag_gohan_yes] →　　朝ごはんを食べて義塾にいく [endlink][r]
 [s]
 
-*tag_sleep
+
+*tag_akirame
 
 [cm]
 
 [bg storage=sleep.jpg time=500]
 
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
+出席が必要なのに,,,[l][r]
+落単！！[r]
 
 【 BAD END 】[l][cm]
 
 [jump target=*start]
 
-*tag_run
+*tag_gohan_non
+[cm]
+[bg storage=run.jpg time=500]
+
+
+おなかはすいたけど、頑張て義塾に行くぞーーー！！[l][r]
+ふーーなんとか駅に間に合ったぞ！[r]
+
+
+[l][cm]
+[jump target=*tag_nest]
+
+*tag_gohan_yes
+[l][cm]
+
+[bg storage=manpuku_kurushii.png time=500]
+
+ごはん食べすぎてもう動けない。。。[l][r]
+落単！！[r]
+
+【 BAD END 】[l][cm]
+
+[jump target=*start]
+
+*tag_nest
+[l][cm]
+
+
+
+[bg storage=Z:\github\tyrano_sample\docs\data\bgimage\hiyoshi.HEIC time=500]
+
+よかったー！電車に間に合って何とかギリギリ日吉駅までついたぞ！[l][r]
+日吉キャンパス前の横断歩道を渡ろうか？次のバス停留所の横断歩道で渡ろうか？どっちが早いかな？[l][r]
+
+[link target=*tag_hiyoshi] →　　日吉キャンパス前の横断歩道 [endlink][r]
+[link target=*tag_bas] →　　バス停留所の横断歩道 [endlink][r]
+[s]
+
+
+*tag_hiyoshi
+[l][cm]
 
 [bg storage=run.jpg time=500]
 
-[cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
+どんだけ待たせるんだ！！長いなぁ[l][r]
+矢上に間に合わず落単[r]
 
-【 GOOD END 】[l][cm]
+【 BAD END 】[l][cm]
+[jump target=*start]
 
+
+*tag_bas
+[l][cm]
+
+[bg storage=run.jpg time=500]
+
+ちょうど信号とかみ合ったぞ！[l][r]
+あ！！！！バスが！！！！[l][r]
+バスに轢かれて死亡[l][r]
+
+【 BAD END 】[l][cm]
 [jump target=*start]
